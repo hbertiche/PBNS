@@ -21,7 +21,7 @@ https://youtu.be/ALwhjm40zRg
 
 <h3>Outfit resizing</h3>
 
-PBNS formulation also allows unsupervised outfit resizing. That is, retargetting to desired body shape and control over tightness.<br>
+PBNS formulation also allows unsupervised outfit resizing. That is, retargetting to the desired body shape and control over tightness.<br>
 Just as standard PBNS, it can deal with complete outfits with multiple layers of cloth, different fabrics, complements, ...
 
 <p float='left'>
