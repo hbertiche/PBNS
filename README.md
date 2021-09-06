@@ -31,7 +31,7 @@ Just as standard PBNS, it can deal with complete outfits with multiple layers of
 
 <h3>Enhancing 3D Avatars</h3>
 
-Due to the simple formulation of PBNS and no dependency from data, it can be used to easily enhance any 3D custom avatar with realistic outfits in a matter of minutes!.
+Due to the simple formulation of PBNS and no dependency from data, it can be used to easily enhance any 3D custom avatar with realistic outfits in a matter of minutes!
 
 <p float='left'>
   <img width=300px src="https://drive.google.com/uc?export=view&id=1JMb8Zd5BS51_hfMUGDqsDVYJqH_AY9Z7">
