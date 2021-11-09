@@ -36,10 +36,9 @@ class Data:
 		self._shape = shape
 		# TF Dataset
 		ds = tf.data.Dataset.from_tensor_slices(self._poses)
+		if mode == 'train': ds = ds.shuffle(self._n_samples)
 		ds = ds.map(self.tf_map, num_parallel_calls=batch_size)
 		ds = ds.batch(batch_size=batch_size)
-		if mode == 'train':
-			ds = ds.shuffle(batch_size)
 		self._iterator = ds
 
 	def _next(self, pose):
