@@ -27,10 +27,9 @@ class Data:
 		self._tightness_range = tightness_range
 		# TF Dataset
 		ds = tf.data.Dataset.from_tensor_slices(np.arange(epoch_steps).reshape((-1,1)))
+		if mode == 'train': ds = ds.shuffle(epoch_steps) # not really necessary
 		ds = ds.map(self.tf_map, num_parallel_calls=batch_size)
 		ds = ds.batch(batch_size=batch_size)
-		if mode == 'train':
-			ds = ds.shuffle(batch_size)
 		self._iterator = ds
 		self._n_samples = epoch_steps
 		
