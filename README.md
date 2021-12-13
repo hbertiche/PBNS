@@ -14,7 +14,7 @@ https://arxiv.org/abs/2012.11310
 
 <img src="https://sergioescalera.com/wp-content/uploads/2021/01/clothed31.png">
 
-<img src="https://drive.google.com/uc?export=view&id=1B_rPJz3qyyf6B3py7fQ6sE5n749n8k-C">
+<img src="/gifs/seqs.gif">
 
 Video:<br>
 https://youtu.be/ALwhjm40zRg
@@ -25,8 +25,8 @@ PBNS formulation also allows unsupervised outfit resizing. That is, retargetting
 Just as standard PBNS, it can deal with complete outfits with multiple layers of cloth, different fabrics, complements, ...
 
 <p float='left'>
-  <img width=400px src="https://drive.google.com/uc?export=view&id=1xKkLufCBdlHaodpBpci_0SLSrv1MStFU">
-  <img width=400px src="https://drive.google.com/uc?export=view&id=1V2iV38BYS8V0rl4zu72SDGrWvsyOXEjP">
+  <img width=400px src="/gifs/resizer0.gif">
+  <img width=400px src="/gifs/resizer1.gif">
 </p>
 
 <h3>Enhancing 3D Avatars</h3>
@@ -34,9 +34,9 @@ Just as standard PBNS, it can deal with complete outfits with multiple layers of
 Due to the simple formulation of PBNS and no dependency from data, it can be used to easily enhance any 3D custom avatar with realistic outfits in a matter of minutes!
 
 <p float='left'>
-  <img width=300px src="https://drive.google.com/uc?export=view&id=1JMb8Zd5BS51_hfMUGDqsDVYJqH_AY9Z7">
-  <img width=300px src="https://drive.google.com/uc?export=view&id=1XdJma5ewiHvojHH-wGFISx4csHJ7So-Y">
-  <img width=300px src="https://drive.google.com/uc?export=view&id=1qgfleepwAeC3EVtat8oB54DbNcl9jA9d">
+  <img width=300px src="/gifs/avatar1.gif">
+  <img width=300px src="/gifs/avatar2.gif">
+  <img width=300px src="/gifs/avatar0.gif">
 </p>
 
 <h3>Repository structure</h3>
