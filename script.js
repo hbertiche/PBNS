@@ -29,9 +29,6 @@ function copy_bibtex() {
     window.getSelection().removeAllRanges();
 }
 
-// Read JSON
-fetch("./paper.json").then(response => response.json()).then(json => make_site(json))
-
 function make_site(paper) {
     get("title").textContent = paper.title;
     get("conference").textContent = paper.conference;
@@ -52,3 +49,6 @@ function make_site(paper) {
     get("video").src = paper.URLs.youtube;
     get("copy-button").onclick = copy_bibtex
 }
+
+// Read JSON
+fetch("./paper.json").then(response => response.json()).then(json => make_site(json))
