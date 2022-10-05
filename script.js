@@ -30,24 +30,25 @@ function copy_bibtex() {
 }
 
 // Read JSON
-fetch("./paper.json").then(response => response.json()).then(response => console.log(response))
+fetch("./paper.json").then(response => response.json()).then(json => make_site(json))
 
-// Set paper metadata
-get("title").textContent = paper.title;
-get("conference").textContent = paper.conference;
-paper.authors.map((author, index) => {
-    node = author_node(author);
-    get("author-list").appendChild(node);
-    if(index == paper.authors.length - 1) return;
-    node.innerHTML += ", "
-})
-get("affiliation-list").appendChild(affiliations_node(paper.affiliations));
-get("abstract").textContent = paper.abstract;
-for(var button in paper.URLs) {
-    node = get(button);
-    url = paper.URLs[button];
-    if(url == null) node.remove();
-    else node.href = url;
+function make_site(paper) {
+    get("title").textContent = paper.title;
+    get("conference").textContent = paper.conference;
+    paper.authors.map((author, index) => {
+        node = author_node(author);
+        get("author-list").appendChild(node);
+        if(index == paper.authors.length - 1) return;
+        node.innerHTML += ", "
+    })
+    get("affiliation-list").appendChild(affiliations_node(paper.affiliations));
+    get("abstract").textContent = paper.abstract;
+    for(var button in paper.URLs) {
+        node = get(button);
+        url = paper.URLs[button];
+        if(url == null) node.remove();
+        else node.href = url;
+    }
+    get("video").src = paper.URLs.youtube;
+    get("copy-button").onclick = copy_bibtex
 }
-get("video").src = paper.URLs.youtube;
-get("copy-button").onclick = copy_bibtex
