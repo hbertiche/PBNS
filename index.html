@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Neural Cloth SImulation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+<body>
+    <div id="body">
+        <h1 id="title"></h1>
+        <h3 id="conference"></h3>
+        <div id="author-list">
+        </div>
+        <div id="affiliation-list">
+        </div>
+        <div id="button-list">
+            <a id="paper">
+                <img src="assets/logos/paper-icon.png">
+                <span>Paper</span>
+            </a>
+            <a id="arxiv">
+                <img src="assets/logos/arXiv.svg">
+                <span>arXiv</span>
+            </a>
+            <a id="youtube">
+                <img src="assets/logos/YouTube-logo.png">
+                <span>Video</span>
+            </a>
+            <a id="github">
+                <img src="assets/logos/GitHub-Mark-32px.png">
+                <span>GitHub</span>
+            </a>
+            <a id="data">
+                <img src="assets/logos/data-icon.png">
+                <span>Dataset</span>
+            </a>
+        </div>
+        <div id="content">
+            <img src="assets/imgs/motivation.png">
+            <div id="abstract-container">
+                <h1>Abstract</h1>
+                <p id="abstract"></p>
+            </div>
+            <div id="video-container">
+                <h1>Video</h1>
+                <iframe id="video"></iframe>
+            </div>
+            <div id="bibtex-container">
+                <h1>BibTeX</h1>
+                <div id="copy-button">
+                    <img src="assets/logos/copy-icon.png">
+                </div>
+                <pre id="bibtex">    @article{10.1145/3478513.3480479,
+        author = {Bertiche, Hugo and Madadi, Meysam and Escalera, Sergio},
+        title = {PBNS: Physically Based Neural Simulation for Unsupervised Garment Pose Space Deformation},
+        year = {2021},
+        issue_date = {December 2021},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        volume = {40},
+        number = {6},
+        issn = {0730-0301},
+        url = {https://doi.org/10.1145/3478513.3480479},
+        doi = {10.1145/3478513.3480479},
+        abstract = {We present a methodology to automatically obtain Pose Space Deformation (PSD) basis for rigged garments through deep learning. Classical approaches rely on Physically Based Simulations (PBS) to animate clothes. These are general solutions that, given a sufficiently fine-grained discretization of space and time, can achieve highly realistic results. However, they are computationally expensive and any scene modification prompts the need of re-simulation. Linear Blend Skinning (LBS) with PSD offers a lightweight alternative to PBS, though, it needs huge volumes of data to learn proper PSD. We propose using deep learning, formulated as an implicit PBS, to un-supervisedly learn realistic cloth Pose Space Deformations in a constrained scenario: dressed humans. Furthermore, we show it is possible to train these models in an amount of time comparable to a PBS of a few sequences. To the best of our knowledge, we are the first to propose a neural simulator for cloth. While deep-based approaches in the domain are becoming a trend, these are data-hungry models. Moreover, authors often propose complex formulations to better learn wrinkles from PBS data. Supervised learning leads to physically inconsistent predictions that require collision solving to be used. Also, dependency on PBS data limits the scalability of these solutions, while their formulation hinders its applicability and compatibility. By proposing an unsupervised methodology to learn PSD for LBS models (3D animation standard), we overcome both of these drawbacks. Results obtained show cloth-consistency in the animated garments and meaningful pose-dependant folds and wrinkles. Our solution is extremely efficient, handles multiple layers of cloth, allows unsupervised outfit resizing and can be easily applied to any custom 3D avatar.},
+        journal = {ACM Trans. Graph.},
+        month = {dec},
+        articleno = {198},
+        numpages = {14},
+        keywords = {physics, garment, simulation, deep learning, animation, pose space deformation, neural network}
+    }</pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="paper.json"></script> -->
+    <script type="text/javascript" src="script.js"></script>
+</body>

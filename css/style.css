@@ -1,0 +1,141 @@
+/* #body * {
+    border: 1px dashed blue;
+} */
+
+:root {
+    --text-color: #444;
+}
+
+* {
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+#body {
+    text-align: center;
+    margin: auto;
+}
+
+#title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+#conference {
+    color: #666;
+    font-weight: 100;
+}
+
+#author-list a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #219bef
+}
+#author-list a:hover {
+    text-decoration: underline;
+}
+
+#affiliation-list span {
+    font-size: 1.25rem;
+}
+
+#button-list {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#button-list a {
+    margin:10px;
+    padding: .5rem .75rem .75rem .75rem;
+    background-color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    align-items: center;
+    height: 2rem;
+}
+
+#button-list a:hover {
+    background-color: white;
+    color: var(--text-color);
+}
+
+#button-list a img {
+    max-height: 1rem;
+    -webkit-filter: invert(100%);
+    vertical-align: middle;
+}
+
+#button-list a:hover img {
+    -webkit-filter: invert(18.75%);
+}
+
+#button-list a span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    color: white;
+}
+
+#button-list a:hover span {
+    color: var(--text-color);
+}
+
+#content img {
+    width: 80%;
+}
+
+#content p {
+    text-align: justify;
+    max-width: 960px;
+    margin:auto;
+}
+
+#abstract-container {
+    width: 65%;
+    margin: auto;
+}
+
+#video {
+    width: 420px;
+    height: 315px;
+}
+
+#bibtex-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+
+#bibtex {
+    background-color: #F4F4F4;
+    margin: auto;
+    overflow-x: auto;
+    padding: 1rem;
+    text-align: left;
+    font-size: .75em;
+}
+
+#copy-button {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+}
+
+#copy-button:hover {
+    cursor: pointer;
+}
+
+#copy-button img {
+    width: 100%;
+}
+
+#copy-button:hover img {
+    -webkit-filter: invert(100%);
+}
