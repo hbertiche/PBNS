@@ -30,6 +30,7 @@ function copy_bibtex() {
 }
 
 function make_site(paper) {
+    document.title = paper.title;
     get("title").textContent = paper.title;
     get("conference").textContent = paper.conference;
     paper.authors.map((author, index) => {
