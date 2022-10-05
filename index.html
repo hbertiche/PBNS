@@ -45,6 +45,40 @@
                 <h1>Video</h1>
                 <iframe id="video"></iframe>
             </div>
+            <div class="media-container">
+                <h1>Qualitative</h1>
+                <img src="https://sergioescalera.com/wp-content/uploads/2021/01/clothed31.png">
+                <img src="gifs/seqs.gif">
+                <h1>Outfit resizing</h1>
+                <section class="slider-wrapper" id="slider1">
+                    <button class="slide-arrow slide-arrow-prev">
+                        &#8249;
+                    </button>
+                    <button class="slide-arrow slide-arrow-next">
+                        &#8250;
+                    </button>
+                     
+                    <ul class="slides-container">
+                        <li class="slide"><img src="gifs/resizer0.gif"></li>
+                        <li class="slide"><img src="gifs/resizer1.gif"></li>
+                    </ul>
+                </section>
+                <h1>3D Characters</h1>
+                <section class="slider-wrapper" id="slider2">
+                    <button class="slide-arrow slide-arrow-prev">
+                        &#8249;
+                    </button>
+                    <button class="slide-arrow slide-arrow-next">
+                        &#8250;
+                    </button>
+                     
+                    <ul class="slides-container">
+                        <li class="slide"><img src="gifs/avatar0.gif"></li>
+                        <li class="slide"><img src="gifs/avatar1.gif"></li>
+                        <li class="slide"><img src="gifs/avatar2.gif"></li>
+                    </ul>
+                </section>
+            </div>
             <div id="bibtex-container">
                 <h1>BibTeX</h1>
                 <div id="copy-button">
@@ -75,4 +109,25 @@
 
     <!-- <script type="text/javascript" src="paper.json"></script> -->
     <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="text/javascript">
+        function set_slider(id) {
+            const root = document.getElementById(id);
+            const slidesContainer = root.querySelector(".slides-container");
+            const slide = root.querySelector(".slide");
+            const prevButton = root.querySelector(".slide-arrow-prev");
+            const nextButton = root.querySelector(".slide-arrow-next");
+            nextButton.addEventListener("click", (event) => {
+                const slideWidth = slide.clientWidth;
+                slidesContainer.scrollLeft += slideWidth;
+            });
+            prevButton.addEventListener("click", () => {
+                const slideWidth = slide.clientWidth;
+                slidesContainer.scrollLeft -= slideWidth;
+            });
+        }
+        set_slider("slider1");
+        set_slider("slider2");
+    </script>
 </body>
