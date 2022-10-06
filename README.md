@@ -1,4 +1,6 @@
-### PBNS: Physically Based Neural Simulation for Unsupervised Outfit Pose Space Deformation.
+## PBNS: Physically Based Neural Simulation for Unsupervised Outfit Pose Space Deformation.
+
+<img src="/gifs/PBNS Teaser.png">
 
 <a href="hbertiche.github.io/PBNS">Project Page</a> | <a href="https://dl.acm.org/doi/10.1145/3478513.3480479">Paper</a> | <a href="https://arxiv.org/abs/2012.11310">arXiv</a> | <a href="https://youtu.be/ALwhjm40zRg">Video</a>
 
