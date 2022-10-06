@@ -4,17 +4,17 @@
     "authors": [
         {
             "name": "Hugo Bertiche",
-            "email": "hugo_bertiche@hotmail.com",
+            "email": "mailto:hugo_bertiche@hotmail.com",
             "affiliations": [1, 2]
         },
         {
             "name": "Meysam Madadi",
-            "email": "mmadadi@cvc.uab.cat",
+            "email": "mailto:mmadadi@cvc.uab.cat",
             "affiliations": [1, 2]
         },
         {
             "name": "Sergio Escalera",
-            "email": "sescalera@ub.edu",
+            "email": "https://sergioescalera.com/",
             "affiliations": [1, 2]
         }
     ],
