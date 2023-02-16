@@ -2,7 +2,7 @@
 
 <img src="/gifs/PBNS Teaser.png">
 
-<a href="hbertiche.github.io/PBNS">Project Page</a> | <a href="https://dl.acm.org/doi/10.1145/3478513.3480479">Paper</a> | <a href="https://arxiv.org/abs/2012.11310">arXiv</a> | <a href="https://youtu.be/ALwhjm40zRg">Video</a>
+<a href="https://hbertiche.github.io/PBNS">Project Page</a> | <a href="https://dl.acm.org/doi/10.1145/3478513.3480479">Paper</a> | <a href="https://arxiv.org/abs/2012.11310">arXiv</a> | <a href="https://youtu.be/ALwhjm40zRg">Video</a>
 
 <ul>
   <li><b>Unsupervised:</b> No need of gathering costly PBS data for training your models. Furthermore, PBNS qualitatively outperforms supervised learning.</li>
